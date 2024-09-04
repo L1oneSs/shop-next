@@ -103,7 +103,7 @@ export async function createOrder(data: CheckoutFormValues) {
 
     await sendEmail(
       data.email,
-      'Shop Next / Оплатите заказ #' + order.id,
+      'Next Pizza / Оплатите заказ #' + order.id,
       PayOrderTemplate({
         orderId: order.id,
         totalAmount: order.totalAmount,
